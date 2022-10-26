@@ -17,5 +17,8 @@ jobs:
    - name: List env
      run: |
        env
-       ls -la
-  
+       ls -ls
+   - name: Dump runner context
+     run: echo '{{ toJSON|runner }}
+   - name: Dump github context
+     run: echo '{{ toJSON|github }}
