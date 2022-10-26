@@ -19,6 +19,6 @@ jobs:
        env
        ls -ls
    - name: Dump runner context
-     run: echo '{{ toJSON|runner }}
+     run: echo '{{ toJSON|runner }}'
    - name: Dump github context
-     run: echo '{{ toJSON|github }}
+     run: echo '{{ toJSON|github }}'
